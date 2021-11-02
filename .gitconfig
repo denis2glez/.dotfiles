@@ -1,0 +1,13 @@
+[user]
+	name = Denis Deniz González
+	email = denis2.glez@gmail.com
+	signingkey = 9B9A627AC7C9ABCC8157C3F5C4F3F5DE419C92C9
+[core]
+	autocrlf = input
+	filemode = false
+[color]
+	ui = auto
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
