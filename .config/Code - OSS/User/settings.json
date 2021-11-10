@@ -12,7 +12,9 @@
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.untitled.hint": "hidden",
+  "workbench.colorTheme": "GitHub Dark Default",
   // "workbench.colorCustomizations": {
+  // "editor.background": "#07090c"
   //   // Status bar when a folder or workspace is active
   //   "statusBar.background": "#ff0000",
   //   "statusBar.foreground": "#ff0000",
@@ -1224,25 +1226,35 @@
   "cSpell.userWords": [
     "actix",
     "chrono",
+    "CIMNE",
     "clippy",
+    "cmake",
     "cryptoasset",
+    "FDMC",
     "forex",
     "jemalloc",
     "jemallocator",
     "kubectl",
     "kubegres",
     "Kubernetes",
+    "libc",
     "malloc",
     "minikube",
+    "mockall",
+    "openapi",
     "pacman",
     "proto",
     "psql",
     "reqwest",
     "roadmap",
+    "rustc",
     "rustfmt",
+    "rustup",
     "splitn",
     "sqlx",
     "thiserror",
-    "tlsv"
+    "tlsv",
+    "UCLV",
+    "wiremock"
   ],
 }

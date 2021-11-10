@@ -230,8 +230,11 @@ source /usr/share/powerline/bindings/zsh/powerline.zsh
 
 # eval "$(starship init zsh)"
 
-source /usr/share/fzf/completion.zsh
-source /usr/share/fzf/key-bindings.zsh
+# source /usr/share/fzf/completion.zsh
+# source /usr/share/fzf/key-bindings.zsh
+
+source /usr/share/skim/completion.zsh
+source /usr/share/skim/key-bindings.zsh
 
 # HACK: It seems the declare -A aliashash has a scope limited to the function __start_minikube, so
 # the aliashash variable is not declared in __minikube_root_command
