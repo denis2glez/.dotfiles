@@ -215,6 +215,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+export TF_CPP_MIN_LOG_LEVEL=2
 export CR_TOOLS="/mnt/Ext4/Dev/Cr"
 export CCACHE_CPP2=yes
 export CCACHE_SLOPPINESS=time_macros
@@ -223,7 +224,9 @@ export CCACHE_DIR="$CR_TOOLS/chromium/.cache/ccache"
 
 export CDPATH=~/Work/Projects:/mnt/Data
 
-export PATH=$HOME/Work/Android/sdk/platform-tools:$CR_TOOLS/depot_tools:$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/.cargo/bin:$PATH
+export PATH=$HOME/Work/Android/sdk/platform-tools:$CR_TOOLS/depot_tools:$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/.cargo/bin:/opt/cuda/bin:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cuda/lib64
+export CPATH=$CPATH:/opt/cuda/include
 
 powerline-daemon -q
 source /usr/share/powerline/bindings/zsh/powerline.zsh

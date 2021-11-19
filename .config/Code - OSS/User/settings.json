@@ -3,14 +3,13 @@
   "editor.fontSize": 19,
   "editor.minimap.enabled": false,
   "window.titleBarStyle": "native",
-  "window.zoomLevel": 0.5,
   "window.menuBarVisibility": "toggle",
+  "window.zoomLevel": 0.5,
   "debug.console.fontFamily": "Fira Code Retina",
   "terminal.integrated.fontSize": 19,
   "debug.console.fontSize": 19,
   "markdown.preview.fontSize": 25,
   "workbench.iconTheme": "vscode-icons",
-  "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.colorTheme": "GitHub Dark Default",
   // "workbench.colorCustomizations": {
@@ -72,6 +71,7 @@
   // "markdown.styles": [
   //   "https://use.fontawesome.com/releases/v5.7.1/css/all.css"
   // ],
+  "restructuredtext.preview.fontSize": 24,
   // Git
   "git.autofetch": true,
   "gitlens.codeLens.enabled": false,
@@ -155,14 +155,15 @@
   "redhat.telemetry.enabled": false,
   // Python
   "python.showStartPage": false,
-  "python.languageServer": "Pylance",
-  "python.terminal.activateEnvironment": false,
+  "python.languageServer": "Default",
+  // "python.terminal.activateEnvironment": false,
   "python.formatting.provider": "black",
-  "python.insidersChannel": "off",
+  "python.insidersChannel": "weekly",
   // Latex
   "latex-workshop.view.pdf.viewer": "tab",
   "[latex]": {
     "editor.formatOnSave": false,
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
   },
   // Vim
   "vim.highlightedyank.enable": true,
@@ -1219,21 +1220,29 @@
     "**/*.md",
   ],
   // To organize
-  "restructuredtext.preview.fontSize": 24,
   "docker.showStartPage": false,
   "sqltools.useNodeRuntime": true,
   // TODO: Why not use the external file `cSpell.json`?
   "cSpell.userWords": [
     "actix",
+    "bytea",
     "chrono",
     "CIMNE",
     "clippy",
     "cmake",
     "cryptoasset",
+    "Deniz",
+    "Ewkb",
     "FDMC",
     "forex",
+    "geos",
+    "geospatial",
+    "geozero",
+    "González",
+    "hasher",
     "jemalloc",
     "jemallocator",
+    "keras",
     "kubectl",
     "kubegres",
     "Kubernetes",
@@ -1241,8 +1250,11 @@
     "malloc",
     "minikube",
     "mockall",
+    "ndarray",
+    "nonlocal",
     "openapi",
     "pacman",
+    "postgis",
     "proto",
     "psql",
     "reqwest",
@@ -1252,9 +1264,10 @@
     "rustup",
     "splitn",
     "sqlx",
+    "SRID",
     "thiserror",
     "tlsv",
-    "UCLV",
     "wiremock"
   ],
+  "workbench.startupEditor": "none",
 }
