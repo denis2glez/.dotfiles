@@ -162,7 +162,7 @@
   // Latex
   "latex-workshop.view.pdf.viewer": "tab",
   "[latex]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "James-Yu.latex-workshop",
   },
   // Vim
@@ -1267,6 +1267,7 @@
     "SRID",
     "thiserror",
     "tlsv",
+    "winget",
     "wiremock"
   ],
   "workbench.startupEditor": "none",
