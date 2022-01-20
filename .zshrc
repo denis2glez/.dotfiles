@@ -9,6 +9,7 @@ setopt nobeep                                                   # No beep
 setopt appendhistory                                            # Immediately append history instead of overwriting
 setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
 setopt autocd                                                   # if only directory path is entered, cd there.
+setopt interactivecomments 					# Activate the bash-style comments.
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
@@ -194,6 +195,9 @@ esac
 
 export GPG_TTY=$(tty)
 
+# To filter only executable files
+fx() { print -z $(fd -HI -tl -tx | sk --tac) }
+
 alias time='/usr/bin/time'
 alias vim="lvim"
 alias vi="lvim"
@@ -222,9 +226,9 @@ export CCACHE_SLOPPINESS=time_macros
 export CCACHE_BASEDIR="$CR_TOOLS/chromium/src"
 export CCACHE_DIR="$CR_TOOLS/chromium/.cache/ccache"
 
-export CDPATH=~/Work/Projects:/mnt/Data
+# export CDPATH=~/Work/Projects:/mnt/Data
 
-export PATH=$HOME/Work/Android/sdk/platform-tools:$CR_TOOLS/depot_tools:$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/.cargo/bin:/opt/cuda/bin:$PATH
+export PATH=$HOME/Work/Programming/Android/sdk/platform-tools:$CR_TOOLS/depot_tools:$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/.cargo/bin:/opt/cuda/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cuda/lib64
 export CPATH=$CPATH:/opt/cuda/include
 
@@ -238,6 +242,9 @@ source /usr/share/powerline/bindings/zsh/powerline.zsh
 
 source /usr/share/skim/completion.zsh
 source /usr/share/skim/key-bindings.zsh
+
+bashcompinit
+source /mnt/Ext4/Dev/vcpkg/scripts/vcpkg_completion.zsh
 
 # HACK: It seems the declare -A aliashash has a scope limited to the function __start_minikube, so
 # the aliashash variable is not declared in __minikube_root_command
