@@ -1207,8 +1207,6 @@
     "!Split",
     "!Split sequence"
   ],
-  // AWS
-  "aws.profile": "profile:default",
   "aws.onDefaultRegionMissing": "add",
   "aws.telemetry": false,
   // todohighlight
@@ -1271,4 +1269,5 @@
     "wiremock"
   ],
   "workbench.startupEditor": "none",
+  "aws.profile": "profile:default",
 }
